@@ -46,10 +46,30 @@ console.log(sum);
 
 getSum();
 
-//4
-const filterEvenNumbers = numbers.filter((number) => number % 2 === 0);
-//const filterOddNumbers = numbers.filter((number) => number % 2 !== 0);
+//2
+
+function calculateNameLenght (currency){
+    if (currency === "USD"){
+        console.log("$");
+        return "$";
+    }
+    if (currency === "EUR") {
+        console.log("€");
+        return "€";
+    }
+    if (currency ==="GEL") {
+       console.log("ლ");
+       return "ლ";       
+    }
+}
+
+calculateNameLenght ("USD");
+calculateNameLenght ("EUR");
+calculateNameLenght ("GEL");
+
+// 4
+
+let numbers = [1 ,2 ,3, 4, 5, 6, 8];
+const filterEvenNumbers = numbers.filter((number)  => number % 2 === 0);
 console.log(filterEvenNumbers);
-
-
 
